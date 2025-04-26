@@ -2,139 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Narasimha | Data Analyst Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MERUVA REDDI NAGA NARASIMHA | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="container header-container">
-      <img src="assets/logo.png" alt="Logo" class="logo">
+  <header class="header">
+    <div class="container nav-container">
+      <img src="logo.png" alt="Logo" class="logo">
       <h1>MERUVA REDDI NAGA NARASIMHA</h1>
-      <p>🎯 Data Analyst | Marketing Intelligence Specialist</p>
-      <a href="#contact" class="btn">Contact Me</a>
-      <button id="theme-toggle" class="btn toggle-btn">🌗 Toggle Mode</button>
+      <p class="subtitle">📊 Data Analyst | Marketing Intelligence Specialist</p>
+      <button id="toggleMode" class="mode-btn">🌙 Dark Mode</button>
     </div>
-  </header>
-
-  <!-- NAVBAR -->
-  <nav>
-    <div class="container">
+    <nav class="nav-links">
       <a href="#summary">Summary</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#certifications">Certifications</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- SECTIONS -->
-  <section id="summary" class="container">
-    <h2>📜 Summary</h2>
-    <p>A passionate Data Analyst specializing in Marketing & Sales Insights, Analytics, and Business Intelligence with 2.5+ years of experience.</p>
+  <section id="summary" class="section">
+    <h2>📝 Summary</h2>
+    <p>A passionate Data Analyst specializing in Marketing & Sales Insights, Analytics, and Business Intelligence with 2.5+ years of experience. 🧠</p>
   </section>
 
-  <section id="experience" class="container">
+  <section id="experience" class="section">
     <h2>💼 Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Associate Ops & Analytics | Grant Thornton</h3>
-          <span>2024 - Present</span>
-          <p>Building ROMI Dashboards, Competitor Intelligence, VOC Market Analysis using SQL, Power BI, and Python.</p>
-        </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Data Analyst | Hiveminds</h3>
-          <span>2022 - 2024</span>
-          <p>Developed Sentiment Analysis, Cohort Tracking, SOV Analytics, and Automated Client Reports in the marketing space.</p>
-        </div>
-      </div>
+    <div class="job">
+      <h3>Associate Ops & Analytics | Grant Thornton (2024 – Present)</h3>
+      <ul>
+        <li><strong>ROMI Power BI Dashboard Development:</strong> 🚀 Created dashboards integrating sales, revenue, and campaign spend from ADF using SQL, improving reporting efficiency by 70%.</li>
+        <li><strong>VOC Market Competitors Report:</strong> 🕵️‍♂️ Scraped 12 competitor sites with Python, extracted article insights, and built a competitor intelligence dashboard in Power BI.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Data Analyst | Hiveminds (2022 – 2024)</h3>
+      <ul>
+        <li><strong>Power BI Report Development:</strong> 📊 Centralized dashboards for ad tracking with DOD, MOM, WOW analysis.</li>
+        <li><strong>Sentiment Analysis:</strong> 💬 Analyzed 100K reviews with NLTK/TextBlob to identify UI and support issues, boosting sales by 15%.</li>
+        <li><strong>Cohort Analysis:</strong> 📈 Improved retention and lifetime value with cohort customer behavior tracking.</li>
+        <li><strong>Automation:</strong> 🤖 Automated weekly reporting saving 10+ hours per week, optimized dashboards.</li>
+        <li><strong>Share of Voice Analysis:</strong> 📢 Conducted SOV analysis revealing competitor gaps, resulting in a 15% increase in traffic.</li>
+      </ul>
     </div>
   </section>
 
-  <section id="skills" class="container">
-    <h2>🛠 Skills</h2>
-    <ul class="skills-grid">
+  <section id="skills" class="section">
+    <h2>🛠️ Skills</h2>
+    <ul class="skill-list">
       <li>Python</li>
       <li>SQL</li>
       <li>Power BI</li>
       <li>Excel</li>
-      <li>Data Mining</li>
+      <li>Web Scraping (Selenium)</li>
       <li>Marketing Analytics</li>
       <li>Automation</li>
-      <li>Web Scraping</li>
-      <li>Alteryx</li>
-      <li>Fabrics Learning</li>
-      <li>Azure Cloud</li>
     </ul>
   </section>
 
-  <section id="certifications" class="container">
-    <h2>🎓 Certifications</h2>
+  <section id="certifications" class="section">
+    <h2>📜 Certifications</h2>
     <ul>
-      <li>Python for Everybody - Coursera</li>
-      <li>SQL for Data Analytics - Udemy</li>
+      <li>Python for Data Analysis</li>
+      <li>SQL for Data Analytics</li>
       <li>Microsoft Power BI Certification</li>
-      <li>Alteryx Designer Core Certification</li>
+      <li>Alteryx Core Certification</li>
     </ul>
   </section>
 
-  <section id="projects" class="container">
-    <h2>📊 Projects</h2>
-
-    <div class="project-card">
-      <h3>📈 ROMI Dashboard</h3>
-      <p>Built MoM performance dashboards integrating CRM and Marketing data using SQL & Power BI.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>🤖 Competitor Content Scraper</h3>
-      <p>Developed Python Selenium scrapers for 12 top consulting firms to track content trends.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>📢 Voice of Customer Analysis</h3>
-      <p>Used web scraping, text analytics, and sentiment scoring to build VOC dashboards across consulting websites.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>🔍 Keyword Intelligence Report</h3>
-      <p>Designed keyword-level report tracking emerging themes across industries with automation scripts.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>🕵️‍♂️ Share of Voice (SOV) Dashboard</h3>
-      <p>Developed interactive SOV reports helping brands track their media presence across digital platforms.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>⏳ Cohort Analysis Automation</h3>
-      <p>Automated Excel and Power BI cohort models reducing client reporting time by 80%.</p>
-    </div>
-
+  <section id="projects" class="section">
+    <h2>🚀 Key Projects</h2>
+    <ul>
+      <li>ROMI Power BI Dashboard 🚀</li>
+      <li>VOC Market Competitors Report 🕵️‍♂️</li>
+      <li>Sentiment Analysis of Customer Reviews 💬</li>
+      <li>Customer Cohort Analysis 📈</li>
+      <li>Automation of Reporting Processes 🤖</li>
+      <li>Share of Voice (SOV) Analysis 📢</li>
+    </ul>
   </section>
 
-  <section id="contact" class="container">
-    <h2>📞 Contact</h2>
+  <section id="contact" class="section">
+    <h2>📬 Contact</h2>
     <p>Email: <a href="mailto:meruvareddy04@gmail.com">meruvareddy04@gmail.com</a></p>
-    <p>Phone: +91 9010508373</p>
-    <a href="assets/resume.pdf" class="btn" download>⬇️ Download CV</a>
+    <p>Phone: <a href="tel:+919010508373">+91 90105 08373</a></p>
+    <p>Location: Tirupati, INDIA</p>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Narasimha | All Rights Reserved</p>
+  <footer class="footer">
+    <p>© 2025 MERUVA REDDI NAGA NARASIMHA | Data Analyst Portfolio</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
