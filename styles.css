@@ -1,0 +1,108 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+h1, h2, h3 {
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: square inside;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.header {
+    position: relative;
+    background: #0077cc;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.button-group {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #0077cc;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #005fa3;
+    color: #fff;
+}
+
+.download-btn {
+    background-color: #28a745;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
+
+.animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #ffffff30 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: moveBackground 10s linear infinite;
+    z-index: 1;
+}
+
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: 40px 40px; }
+}
+
+section {
+    padding: 3rem 0;
+    background: #fff;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #222;
+    color: #ccc;
+    font-size: 0.9rem;
+}
